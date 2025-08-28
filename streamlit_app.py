@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.html(
-    "<p><span style='text-decoration: line-through double red;'>Oops</span>!</p>"
+    '<iframe src="https://activate-fwwrn5gbiq-ey.a.run.app/"></iframe>'
 )
 
 # st.set_page_config(page_title="Streamlit File Upload PoC", page_icon="📤", layout="centered")
