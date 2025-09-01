@@ -1,8 +1,12 @@
 import streamlit as st
+from streamlit.components.v1 import html
+import streamlit.components.v1 as components
 
-st.html(
-    '<iframe src="https://activate-fwwrn5gbiq-ey.a.run.app/"></iframe>'
-)
+
+# components.iframe("https://activate-fwwrn5gbiq-ey.a.run.app", height=500)
+
+with open("static/custom.html", "r", encoding="utf-8") as f:
+    html(f.read(), height=800, scrolling=True)
 
 # st.set_page_config(page_title="Streamlit File Upload PoC", page_icon="📤", layout="centered")
 
